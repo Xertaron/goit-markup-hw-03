@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/*To zadanie było czystym chaosem. O ile efekt osiągnałem to mam wątpliwości co do zastonowanej do niego medody*/
 :root {
   /*Nie wpisałem tu kolorów białego i czarnego jako, że się je szybciej wpisuje niż pozostałe i pojawiają się tylko kilka razy na całej stronie. Czy lepiej jednak wpisywać tu każdy kolor?*/
   --brand-color: rgb(33, 150, 243, 100%);
@@ -13,6 +14,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   font-size: 14px;
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: #e5e5e5;
 }
 li {
   list-style: none;
@@ -27,41 +34,7 @@ li {
   margin-left: 200px;
   margin-right: 200px;
 }
-.spacing-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.spacing-portfolio-select {
-  display: flex;
-  justify-content: center;
-}
-.spacing-portfolio-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.spacing-main-abilities {
-  display: inline-flex;
-  height: 101px;
-}
-.spacing-footer {
-  padding-top: 60px;
-}
-.our-team-background {
-  background-color: #ffffff;
-  text-align: center;
-}
-.our-team-photo {
-  background-color: white;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
-    0px 1px 3px 0px #0000001f;
 
-  border-radius: 0px 0px 4px 4px;
-}
-.team-job {
-  color: var(--info-color);
-}
 /*Logo WebStudio*/
 .website-logo {
   font-family: "Raleway", sans-serif;
@@ -93,8 +66,13 @@ li {
 .menu {
   height: 80px;
   border: #ececec 1px solid;
+  background-color: white;
 }
-
+.spacing-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 .navigation-list {
   margin-top: 32px;
   display: inline-block;
@@ -136,6 +114,7 @@ header section ul li:first-child {
   margin-right: 252px;
   text-align: center;
   text-transform: uppercase;
+  display: inline-block;
 }
 .hero-select {
   font-weight: 700;
@@ -147,19 +126,19 @@ header section ul li:first-child {
   width: 200px;
   height: 50px;
 }
-.header-hero-background {
+.hero-background {
   background-color: var(--background-color);
   height: 600px;
+  display: grid;
+  align-items: center;
 }
-.header-hero-spacing {
+.hero-spacing {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  letter-spacing: 6%;
   width: 90%;
+  /*Probowałem różnych sztuczek, ale bez ograniczenia rozmiaru okienka nie byłem w stanie sprawić by napis był dokładnie taki jak na stronie*/
 }
 .abilities-box {
   width: 270px;
@@ -191,6 +170,14 @@ button:active,
   color: white;
 }
 /*Main*/
+.background-main {
+  background-color: white;
+}
+.spacing-portfolio-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .portfolio-select {
   font-size: 16px;
   font-weight: 500;
@@ -201,6 +188,14 @@ button:active,
 }
 li:last-child button {
   margin: 0;
+}
+.spacing-portfolio-select {
+  display: flex;
+  justify-content: center;
+}
+.spacing-main-abilities {
+  display: inline-flex;
+  height: 101px;
 }
 .portfolio-name {
   font-size: 18px;
@@ -213,17 +208,19 @@ li:last-child button {
   line-height: 1.88;
 }
 .portfolio-main-item {
-  border: 1px #eeeeee solid;
   margin-bottom: 30px;
+  display: grid;
 }
 .portfolio-main-item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
 .portfolio-description {
   padding-left: 24px;
+  border: 1px solid #eeeeee;
 }
 .abilities-name {
   font-weight: 700;
+  text-transform: uppercase;
 }
 .abilities-description {
   line-height: 1.71;
@@ -247,6 +244,10 @@ li:last-child button {
   font-size: 16px;
   line-height: 1.2;
 }
+.team-job {
+  font-size: 16px;
+  color: var(--info-color);
+}
 .team-description {
   font-size: 16px;
   color: var(--info-color);
@@ -255,12 +256,24 @@ li:last-child button {
 .our-team-background {
   background-color: #f5f4fa;
   border: 1px #f5f4fa solid;
+  text-align: center;
 }
-/*Footer*/
+.our-team-photo {
+  background-color: white;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*Footer*/
+.spacing-footer {
+  padding-top: 60px;
+}
 .background-footer {
   height: 252px;
   background-color: var(--background-color);
+  display: grid;
 }
 .info-footer {
   color: var(--info-footer-color);
@@ -277,4 +290,3 @@ li:last-child button {
   color: white;
   font-style: normal;
 }
-/*GitHub is a bitch*/
