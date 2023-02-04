@@ -1,1 +1,1 @@
-git@github.com:Xertaron/goit-markup-hw-03.git
+https://github.com/Xertaron/goit-markup-hw-03.git
