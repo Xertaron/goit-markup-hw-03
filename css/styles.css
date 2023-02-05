@@ -218,8 +218,8 @@ li:last-child button {
   margin-bottom: 0px;
 }
 .section-lorem {
+  display: grid;
   padding-top: 94px;
-  padding-bottom: 0.001rem;
 }
 .spacing-main-abilities {
   display: flex;
