@@ -239,6 +239,7 @@ li:last-child button {
 .abilities-description {
   line-height: 1.71;
   color: var(--info-color);
+  width: 95%;
 }
 .job-title {
   font-size: 36px;
