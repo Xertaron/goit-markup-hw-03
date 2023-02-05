@@ -219,10 +219,11 @@ li:last-child button {
 }
 .section-lorem {
   padding-top: 94px;
+  padding-bottom: 0.001rem;
 }
 .spacing-main-abilities {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 .abilities-box {
