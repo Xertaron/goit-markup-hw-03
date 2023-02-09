@@ -141,7 +141,6 @@ header section ul li:first-child {
   align-items: center;
   flex-wrap: wrap;
 }
-
 /*Nie byłem pewien jak sprawić by logo na dole po najechaniu zmieniało kolor na niebieski oraz zachowało swój biały kolor bez nadawania mu osobnej klasy */
 a:hover,
 a:focus,
@@ -154,6 +153,7 @@ button:active,
 .alternate-logo-color:active {
   color: var(--brand-color);
 }
+.current{color:var(--brand-color)}
 /*Przyciski*/
 .portfolio-select:hover,
 .portfolio-select:focus,
